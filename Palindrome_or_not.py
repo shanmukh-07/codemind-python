@@ -1,6 +1,6 @@
-n=input()
-n=n.lower()
-if n==n[::-1]:
-    print("True")
-else:
+string=input()
+string=string.lower()
+if(string==string[::-1]):
+   print("True")
+else:  
     print("False")
