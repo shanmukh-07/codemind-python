@@ -1,13 +1,13 @@
-def cal_lcm(x, y):  
-    if x > y:  
-        greater = x  
-    else:  
-        greater = y  
-    while(True):  
-        if((greater % x == 0) and (greater % y == 0)):  
-            lcm=greater  
-            break  
-        greater += 1  
-    return lcm 
-n1,n2=map(int,input().split())  
-print(cal_lcm(n1,n2))  
+a,b=map(int,input().split())
+t=2
+res=1
+while True:
+    if a%t==0 and b%t==0:
+        a=a//t
+        b=b//t
+        res=res*t
+    else:
+        t+=1
+    if a<t or b<t:
+        break
+print(res*a*b)
