@@ -1,10 +1,10 @@
 n=int(input())
 a=0
 b=1
-print(a,end=" ")
-print(b,end=" ")
-for i in range(2,n):
-    c=a+b
-    print(c,end=" ")
+c=0
+while c<n:
+    print(a,end=' ')
+    t=a+b
     a=b
-    b=c
+    b=t
+    c+=1
