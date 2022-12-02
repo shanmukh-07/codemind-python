@@ -1,15 +1,15 @@
 n=int(input())
-rev=0
+r=0
 while n:
-    rev=rev*10+n%10
+    r=r*10+n%10
     n//=10
-max=0
+m=0
 c=0
-while rev:
-    if rev%10==6 and c==0:
-        max=max*10+9
+while r:
+    if r%10==6 and c==0:
+        m=m*10+9
         c=1
     else:
-        max=max*10+rev%10
-    rev//=10
-print(max)
+        m=m*10+r%10
+    r//=10
+print(m)
