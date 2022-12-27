@@ -1,6 +1,6 @@
-l=list(map(str,input().split()))
+arr=list(map(str,input().split()))
 c=0
-for i in l:
+for i in arr:
     i=i.lower()
     if i==i[::-1]:
         c+=1
