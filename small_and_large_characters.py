@@ -1,7 +1,7 @@
 n = input()
-a = n.split()
-b = []
-for i in a:
-    b.append(list(i))
-for i in b:
+s = n.split()
+l = [] 
+for i in s:
+    l.append(list(i))
+for i in l:
     print(min(i),max(i),end = ' ')
