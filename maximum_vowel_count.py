@@ -1,19 +1,12 @@
-s=input()
-t=c=0
-for char in s:
-    if char=='a':
-        c+=1
-    if char=='e':
-        c+=1
-    if char=='i':
-        c+=1
-    if char=='o':
-        c+=1
-    if char=='u':
-        c+=1
-    if c>t:
-        t=c
-    if char==' ':
-        c=0
-print(t)
-        
+n = input()
+m = n.split()
+s = 'aeiou'
+l = []
+for i in m:
+    c = 0
+    i = i.lower()
+    for j in i:
+        if j in s:
+            c+=1
+        l.append(c)
+print(max(l))
