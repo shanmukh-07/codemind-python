@@ -4,7 +4,7 @@ def fun(n):
     for i in m:
         s+=int(i)**2
     return s
-
+    
 n = int(input())
 while True:
     n = fun(n)
